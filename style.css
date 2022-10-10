@@ -6,6 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background-image: url(img/Background.png);
   }
   /* Carrosel */
   .slider{
@@ -134,9 +135,12 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-bottom: 2px solid #818186;
     height: 8vh;
+    background: white;
+    font-weight: 700;
+    font-size: larger;
   }
   
   main {
@@ -356,26 +360,30 @@ body{
   align-items: center;
 }
 .product1 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .product2 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .product3 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .product4 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .product5 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .product6 {
-  background: linear-gradient(-45deg, #BCEBF0 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(-45deg, #BCEBF0 50%, #ffffffff 50%);
 }
 .textp{
   padding-left: 150px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px black;
 }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
 /* Rodapé */
 .conteudo {
   font-size: 5vw;
@@ -509,7 +517,75 @@ p{
  .team-figure :hover img{
   filter: none;
  }
+/* Formulário */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #ffffff;
+  width: 100%;
+  max-width: 512;
+}
+.form label,
+.form input,
+.form textarea,
+.form button{
+  display: block;
+  width: 512px;
+}
+.form label{
+  color: white;
+  text-shadow: 2px 2px black;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  font-size: larger;
 
+}
+.form input,
+.form textarea{
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color;
+  box-shadow: 0.2s;
+}
+.form textarea{
+  min-height: 13rem;
+  resize: vertical;
+}
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+  outline: none;
+  border-color: #09d;
+  box-shadow: 0 0 0 3px #4dc8ff;
+}
+.form button{
+  display: block;
+  padding: 1rem;
+  background: #0072c4;
+  color: #ffffff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form button:hover,
+.form button:focus{
+  outline: none;
+  background: #09d;
+}
 
 
 
