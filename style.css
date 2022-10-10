@@ -586,7 +586,12 @@ p{
   outline: none;
   background: #09d;
 }
-
-
-
-
+/* Conteúdo quem somos */
+.bloco{
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  border: #23232e solid;
+  margin: 50px auto 0px;
+}
