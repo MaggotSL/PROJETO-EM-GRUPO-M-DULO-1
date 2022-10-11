@@ -124,7 +124,7 @@ body{
   }
   
   a:hover {
-    opacity: 0.7;
+    color: #006987;
   }
   
   .logo img{
@@ -589,9 +589,35 @@ p{
 /* Conteúdo quem somos */
 .bloco{
   background-color: white;
-  width: 500px;
-  height: 300px;
+  width: 800px;
+  height: 100px;
   border-radius: 20px;
   border: #23232e solid;
   margin: 50px auto 0px;
+}
+/* Conteudo quem somos */
+.bloco{
+  background-color: white;
+  width: 400px;
+  height: 100px;
+  border-radius: 20px 50px 100px       ;
+  border: #23232e solid;
+  margin: 90px auto 0px;
+  text-align: center;
+  padding-bottom: 70px;
+
+}
+.bloco2{
+  margin: 10px auto 0px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px 50px 100px ;
+  border: #23232e solid;
+  position: absolute;
+  bottom: 20;
+  right: 0;
+  left: 0;
+  top: 70;
+  text-align: center justify;
 }
