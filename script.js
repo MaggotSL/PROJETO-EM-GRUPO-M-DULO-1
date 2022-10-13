@@ -12,17 +12,26 @@ function nextImage(){
     }
     document.getElementById("radio"+count).checked = true;
 }
-// Carrinho 
-("button").on("click", function() {
-    addToBasket(); (this).parent().parent().find(".product_overlay").css({
-      'transform': ' translateY(0px)',
-      'opacity': '1',
-      'transition': 'all ease-in-out .45s'
-    }).delay(1500).queue(function() {
-      (this).css({
-        'transform': 'translateY(-500px)',
-        'opacity': '0',
-        'transition': 'all ease-in-out .45s'
-      }).dequeue();
-    });
-  });
+function validar_form_contato (){
+  var nome = formcontato.nome.value;
+  var email= formcontato.email.value;
+  var mensagem = formcontato.mensagem.value;
+
+  if(nome == "") {
+   alert("Informe o seu nome");
+   formcontato.nome.focus();
+   return false;
+  }
+
+  if(email == "") {
+   alert("Informe um e-mail válido");
+   formcontato.email.focus();
+   return false;
+  }
+  
+  if(mensagem == "") {
+   alert("Esse campo é obrigatório");
+   formcontato.mensagem.focus();
+   return false;
+  }
+ }

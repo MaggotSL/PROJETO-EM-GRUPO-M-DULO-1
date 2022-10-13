@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -25,30 +24,56 @@
           </ul>
         </nav>
       </header>
-    <!-- Formulário -->
-    <form action="https://formsubmit.co/caio.souza160500@gmail.com" method="POST" class="form">
-
-      <label for="name" id="name">Nome:</label>
-      <input type="text" name="name">
-      <label for="email" id="email">E-mail:</label>
-      <input type="email" name="email">
-      <label for="message" id="message">Mensagem:</label>
-      <textarea name="message" placeholder="Escreva sua mensagem" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500/cemail.html">
-      <button type="submit">Enviar</button>
- </form>
-   <!--  Rodapé  -->
-<footer>
+      <div class="contentpag">
+        <!-- Formulário -->
+        <div class="form">
+          <h1>Fale conosco!</h1>
+        <form name= "formcontato" method="POST">
+          <div class="nome">Nome: 
+           <input type="text" name="nome" placeholder="Nome"></div></br></br>
+          <div class="email">E-mail:
+           <input type="email" name="email" placeholder="E-mail"></div></br></br>
+          <div class="mensagem">Mensagem: 
+           <textarea name="mensagem" placeholder="Fale conosco!"></textarea></br>
+          <input type="submit" value="Enviar" onclick="return validar_form_contato ()">
+        </div>
+      </div>
+      </div>
+  
+   <!-- Rodapé -->
+  <footer>
     <div class="boxs">
-        <h2>Formas de pagamento</h2> <br>
-       
-        <img src="img/logo.jpg.webp" height="25" 
-
-
-      <br>  <p class="p">  ShoPet! Comercio e produtos Pet S.A</p> <br> 
-        <p>R. Fonseca, 240 - Bangu, Rio de Janeiro - RJ, 21820-005</p>
-   
+        <h3>Formas de pagamento</h3>
+        <ul class="box1">
+            <li><img src="img/logo.jpg.webp" alt=""></li>
+            <li>ShoPet Comércio de Produtos para Animais S.A</li>
+            <li>CNPJ: 00.000.000/0000-00</li>
+            <li>R. Fonseca, 240 - Bangu, Rio de Janeiro - RJ, 21820-005</li>
+        </ul>
+        <div>
+          
+        </div>
+    </div>
+    <ul class="socia">
+      <div class="selos">
+        <img src="img/ra_1000_img.webp" alt="">
+        <img src="img/selo-diamante-ebit.webp" alt="">
+        <img src="img/selo-premio-ebit.webp" alt="">
+        <img class="google" src="img/selo-google-safe.webp" alt="">
+      </div>
+      <div class="sociais">
+        <div class="social">
+            <a href="#" class="icon"><img src="img/facebook-icon.png" alt=""></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="img/instagram-icon.png" alt=""></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="img/whatsapp-icon.png" alt=""></a>
+        </div>
+    </div>
+    </ul>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
