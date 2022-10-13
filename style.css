@@ -576,9 +576,10 @@ h3{
 .equipe h2{
   color: white;
 }
-li{
+.equipe li{
     border: radius 100%;
     border: black;
+    text-align: center;
 }
 p{
     text-align: center;
