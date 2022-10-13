@@ -19,6 +19,14 @@ body{
     padding-bottom: 20px;
     padding-top: 20px;
   }
+  .slider2{
+    margin: 0 auto;
+    width: 1200px;
+    height: 350px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
   .slides{
     width: 400%;
     height: 400px;
@@ -132,6 +140,9 @@ body{
   .logo img{
     width: 150px;
   }
+  header{
+    width: 100%;
+  }
   
   nav {
     display: flex;
@@ -143,7 +154,6 @@ body{
     background: white;
     font-weight: 700;
     font-size: larger;
-    width: 196vh;
   }
   .nav-list {
     list-style: none;
@@ -170,9 +180,6 @@ body{
   @media (max-width: 999px) {
     body {
       overflow-x: hidden;
-    }
-    .header{
-      width: 100%;
     }
     .nav-list {
       position: absolute;
@@ -243,17 +250,18 @@ body{
 }
 .product_inner button {
   border: 1px solid #818186;
-  color: #818186;
+  color: #005e7a;
   border-radius: 3px;
   padding: 1em 3em;
   margin: 1em 0 0 0;
   background: none;
   cursor: pointer;
   transition: background ease-in 0.25s;
+  font-weight: 700;
 }
 .product_inner button:hover{
-  color: #006987;
-  background-color: white;
+  color: #ffffff;
+  background-color: #005e7a;
 }
 .prod1 {
   box-shadow: 1px 5px 15px #ccc;
@@ -361,7 +369,7 @@ body{
   text-align: center;
 }
 .product_inner p {
-  color: #818186;
+  color: #000000;
 }
 .product_overlay {
   background: rgba(255, 255, 255, 0.9);
@@ -457,6 +465,7 @@ footer{
   min-height: 250px;
   background:#005e7a;
   display: flex;
+  align-items: flex-end;
 }
 footer .boxs{
   width: 320px;
@@ -510,7 +519,7 @@ h3{
 .sociais{
   display: flex;
   margin-left: 1370px;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 .sociais .social{
   text-align: center;
@@ -519,11 +528,11 @@ h3{
   cursor: pointer;
 }
 .selos{
-  width: 490px;
+  width: 500px;
   margin-left: 1080px;
   margin-top: 20px;
   background: white;
-  border: 3px solid white;
+  border: 8px solid white;
   border-radius: 20px 20px 20px;
 }
 .google{
@@ -564,7 +573,7 @@ h3{
     height: 50px;
     padding: 0;
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .equipe h1::after{
   content: "";
@@ -592,42 +601,71 @@ p{
 }
 /* Formulário */
 .form{
-  background-color: rgb(255, 255, 255);
-  width: 800px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-  border-radius: 20px 50px 100px ;
-  border: #23232e solid;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #ffffff;
+  width: 100%;
+  max-width: 512;
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
-.nome{
-  padding: 20px;
-  margin: 10px;
-  color: #006987;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
+.form label,
+.form input,
+.form textarea,
+.form button{
+  display: block;
+  width: 512px;
 }
-.email{
-  padding: 0px;
-  margin: 10px;
-  color: #006987;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  font-size:larger;
+.form label{
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
 }
-
-.mensagem{
-  padding: 20px;
-  margin: 10px;
-  color: #006987;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
+.form input,
+.form textarea{
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color;
+  box-shadow: 0.2s;
 }
-
-.form h1{
-color: #000000;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+.form textarea{
+  min-height: 13rem;
+  resize: vertical;
+}
+.form input:hover{
+  outline: none;
+  border-color: #09d;
+  box-shadow: 0 0 0 3px #4dc8ff;
+  
+}
+.form button{
+  display: block;
+  padding: 1rem;
+  background: #0072c4;
+  color: #ffffff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form input.enviar:hover,
+.form input.enviar:focus{
+  outline: none;
+  background: #003657;
+  color: #ffffff;
+}
+.name, .email, .mensagem{
+  font-weight: 700;
 }
 /* Conteudo quem somos */
 .bloco{
@@ -650,4 +688,5 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-grow: 1;
   width: 100%;
 }
+
 

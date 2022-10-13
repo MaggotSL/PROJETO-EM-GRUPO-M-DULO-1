@@ -12,6 +12,7 @@ function nextImage(){
     }
     document.getElementById("radio"+count).checked = true;
 }
+// Formulario 
 function validar_form_contato (){
   var nome = formcontato.nome.value;
   var email= formcontato.email.value;
@@ -35,3 +36,5 @@ function validar_form_contato (){
    return false;
   }
  }
+
+
