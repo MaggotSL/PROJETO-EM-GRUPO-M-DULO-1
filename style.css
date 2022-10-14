@@ -589,8 +589,7 @@ footer {
   min-height: 250px;
   background: #005e7a;
   display: flex;
-  align-items: flex-end;
-  max-width: 100%;
+  align-items: center;
 }
 
 footer .boxs {
