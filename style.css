@@ -842,7 +842,7 @@ p {
   border: #23232e solid;
   margin: 90px auto 0px;
   text-align: center;
-  padding-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .bloco h1,
