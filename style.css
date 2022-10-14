@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
   }
-  /* Carrosel */
+  /* Carrossel */
   .slider{
     margin: 0 auto;
     width: 1200px;
